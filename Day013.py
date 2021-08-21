@@ -16,5 +16,11 @@ def c_subset(list1,list2):
     if count==len(list1) or count>=len(list2):
         return True
     return False
-list1,list2=[1,2,3,4],[1,4,3,4,5,2]
+line=[x for x in input().split("],[")]
+list1=list(int(x) for x in line[0][1:].split(","))
+list2=list(int(x) for x in line[1][0:-1].split(","))
 print(c_subset(list1,list2))
+
+# [1,2,3,4,5,6],[1,2]
+
+
