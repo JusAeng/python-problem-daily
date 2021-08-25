@@ -10,7 +10,8 @@ for i in range(len(numbs)):
         temp.pop(j)
         if sum(temp)==100:
             anslist=[x for x in temp]
-            ans.append(anslist)
+            if anslist not in ans:
+                ans.append(anslist)
         temp.insert(j,ele)
     
 if len(ans)!=0:
