@@ -1,4 +1,7 @@
+from time import time
+
 p1,p2,p3,n1,n2 = [int(x) for x in input().split()]
+start = time()
 bonus=0
 
 #5digit
@@ -24,3 +27,4 @@ if n2%100 >= p2:
 bonus+=win2*25
 
 print(bonus)
+print(f'Time taken to run: {time() - start} seconds')
