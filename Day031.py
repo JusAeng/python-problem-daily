@@ -6,15 +6,15 @@ def fileTon(n:int):
             print(txt)
     elif n==2:
         with open("Ton.txt","w") as f:
-            print("Write to text : Ton Zan Jus Nut")
-            a=["Ton","Zan","Jus","Nut"]
-            for ele in a:
+            new=input("Write to text : ")
+            new=new.split()
+            for ele in new:
                 txt=f.write(ele)
     elif n==3:
         with open("Ton.txt","a") as f:
-            a=["Computer","Engineering"]
-            print("Update to Text : Computer Engineering")
-            for ele in a:
+            update=input("Update to Text : ")
+            update=update.split()
+            for ele in update:
                 f.write(ele)
     
 fileTon(int(input("Enter num 1 or 2 or 3 : ")))
