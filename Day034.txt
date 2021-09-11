@@ -1,5 +1,5 @@
 9999 Jus
-500 FF
-500 JJ
 210 Zan
 190 Ton
+100 Nut
+50 Kai
