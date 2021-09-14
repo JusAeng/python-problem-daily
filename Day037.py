@@ -91,3 +91,4 @@ class SinglyLinkedListNoDummy :
             p = self.Node(data,self.head)
             self.head= p
             self.size+=1
+            
